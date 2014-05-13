@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Native Turist</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_httptest">HTTPTest</string>
+    <string name="title_activity_download">DownloadActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_select_tour">SelectTour</string>
+    <string name="title_activity_tour">Tour</string>
+    <string name="title_activity_geofance_breached">GeofanceBreached</string>
+    <string name="title_activity_location_display_text">LocationDisplayText</string>
+    <string name="title_activity_location_play_audio">LocationPlayAudio</string>
+
+</resources>

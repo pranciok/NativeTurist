@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="100"
+       android:padding="10dp"
+       android:background="@drawable/bar">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/image_info_button"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/info"
+            android:layout_weight="1"/>
+       <TextView
+           android:id="@+id/text_tour_name_fragment"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="ovo je tura"
+           android:textSize="30sp"
+           android:layout_weight="70"/>
+       <Button
+           android:id="@+id/button_download_fragment"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="29"/>
+
+
+   </LinearLayout>
+
+
+</FrameLayout>

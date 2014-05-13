@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fer.ppij.nativeturist" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <!-- The following two permissions are not required to use
+         Google Maps Android API v2, but are recommended. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <service
+        android:name="com.example.android.location.ReceiveTransitionsIntentService"
+        android:label="@string/app_name"
+        android:exported="false">
+    </service>
+
+    <application
+        android:name="com.fer.ppij.nativeturist.NativeTuristApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBBFLr6mxvkIGCnAaizYEfLKG_nSp_Weos"/>
+
+
+        <activity
+            android:name="com.fer.ppij.nativeturist.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fer.ppij.nativeturist.HTTPTest"
+            android:label="@string/title_activity_httptest" >
+        </activity>
+        <activity
+            android:name="com.fer.ppij.nativeturist.DownloadActivity"
+            android:label="@string/title_activity_download" >
+        </activity>
+        <activity
+            android:name="com.fer.ppij.nativeturist.SelectTour"
+            android:label="@string/title_activity_select_tour" >
+        </activity>
+        <activity
+            android:name="com.fer.ppij.nativeturist.GeofanceBreached"
+            android:label="@string/title_activity_geofance_breached" >
+        </activity>
+        <activity
+            android:name="com.fer.ppij.nativeturist.LocationDisplayText"
+            android:label="@string/title_activity_location_display_text" >
+        </activity>
+        <activity
+            android:name="com.fer.ppij.nativeturist.LocationPlayAudio"
+            android:label="@string/title_activity_location_play_audio" >
+        </activity>
+        <activity
+            android:name="com.fer.ppij.nativeturist.NativeTouristMap"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>
